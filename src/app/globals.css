@@ -1,26 +1,39 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* We force dark mode variables as the default for this project */
+  --background: #000000;
+  --foreground: #ffffff;
+  --accent-cyan: #22d3ee;
+  --accent-blue: #3b82f6;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Using a modern sans-serif stack for that "Expensive" feel */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Custom Selection Color (Cyan glow when you highlight text) */
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+  color: #fff;
+}
+
+/* Smooth Scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* This fixes the white space at the bottom by ensuring the body 
+   always fills at least the full screen height */
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
