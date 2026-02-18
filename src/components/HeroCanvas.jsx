@@ -27,7 +27,7 @@ function NeuralNetwork(props) {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
         <PointMaterial
           transparent
-          color="#3b82f6"
+          color="#92f63bff"
           size={0.005}
           sizeAttenuation={true}
           depthWrite={false}
