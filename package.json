@@ -2,7 +2,7 @@
   "name": "aseas-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Pranshu-Dev01.github.io/ASEAS",
+  "homepage": "https://intelligrade.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
