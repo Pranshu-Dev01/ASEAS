@@ -66,19 +66,6 @@ export function ClarificationChat({ isActive, onComplete }) {
 
     return (
         <div className="relative flex h-full w-full flex-col overflow-hidden bg-[#f6f7f8] dark:bg-[#101922] text-slate-900 dark:text-white font-['Lexend',sans-serif]">
-            <style jsx global>{`
-                @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
-                @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
-                
-                .no-scrollbar::-webkit-scrollbar {
-                    display: none;
-                }
-                .no-scrollbar {
-                    -ms-overflow-style: none;
-                    scrollbar-width: none;
-                }
-            `}</style>
-
             {/* TopAppBar */}
             <header className="flex items-center bg-[#f6f7f8] dark:bg-[#101922] p-4 pb-2 justify-between z-10 border-b border-gray-200 dark:border-gray-800">
                 <div className="text-slate-900 dark:text-white flex size-12 shrink-0 items-center">

@@ -67,20 +67,6 @@ export function EvaluationDetailScreen({ isActive, onComplete }) {
 
     return (
         <div className="bg-[#f6f7f8] dark:bg-[#101922] text-slate-900 dark:text-white h-full flex flex-col font-['Lexend',sans-serif] overflow-hidden">
-            <style jsx global>{`
-                @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-                @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap');
-                @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
-                
-                .custom-scrollbar::-webkit-scrollbar {
-                    width: 4px;
-                }
-                .custom-scrollbar::-webkit-scrollbar-thumb {
-                    background: #233648;
-                    border-radius: 10px;
-                }
-            `}</style>
-
             {/* Sticky Header */}
             <div className="sticky top-0 z-50 flex items-center bg-[#f6f7f8] dark:bg-[#101922] p-4 pb-2 justify-between border-b border-gray-200 dark:border-gray-800">
                 <div className="text-[#137fec] flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-[#137fec]/10 cursor-pointer">

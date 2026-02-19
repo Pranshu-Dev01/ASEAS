@@ -50,12 +50,6 @@ export function BatchScannerScreen({ isActive, onComplete }) {
 
     return (
         <div className="bg-[#f6f7f8] dark:bg-[#101922] text-white overflow-hidden h-full flex flex-col font-['Lexend',sans-serif]">
-            {/* Styles for this component specifically */}
-            <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap');
-      `}</style>
-
             {/* Top Navigation Bar */}
             <div className="flex items-center bg-[#101922]/80 backdrop-blur-md p-4 pb-2 justify-between z-50">
                 <div className="text-white flex size-12 shrink-0 items-center cursor-pointer">

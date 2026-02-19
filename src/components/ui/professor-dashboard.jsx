@@ -62,19 +62,6 @@ export function ProfessorDashboard({ isActive, onComplete }) {
 
     return (
         <div className="bg-[#f6f7f8] dark:bg-[#101922] text-slate-900 dark:text-white font-['Lexend',sans-serif] h-full flex flex-col relative overflow-hidden text-left">
-            <style jsx global>{`
-                @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-                @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
-                
-                .no-scrollbar::-webkit-scrollbar {
-                    display: none;
-                }
-                .no-scrollbar {
-                    -ms-overflow-style: none;
-                    scrollbar-width: none;
-                }
-            `}</style>
-
             {/* Top Navigation Bar */}
             <div className="sticky top-0 left-0 right-0 z-50 bg-[#f6f7f8]/80 dark:bg-[#101922]/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
                 <div className="flex items-center p-4 pb-2 justify-between">

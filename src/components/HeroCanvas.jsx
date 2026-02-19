@@ -6,9 +6,11 @@ import * as random from 'maath/random/dist/maath-random.esm';
 
 function NeuralNetwork(props) {
   const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.5 }));
+  const [sphere] = useState(() => random.inSphere(new Float32Array(15000), { radius: 1.5 }));
 
   useFrame((state, delta) => {
+    if (!ref.current) return;
+
     // 1. Constant background rotation
     ref.current.rotation.x -= delta / 15;
     ref.current.rotation.y -= delta / 20;
@@ -44,7 +46,7 @@ export default function HeroCanvas() {
     <div className="absolute inset-0 -z-10 bg-black">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Float speed={4} rotationIntensity={0.5} floatIntensity={1}>
-           <NeuralNetwork />
+          <NeuralNetwork />
         </Float>
       </Canvas>
     </div>

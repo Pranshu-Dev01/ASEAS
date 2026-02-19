@@ -21,7 +21,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[110vh] w-full flex flex-col items-center bg-black">
+    <section className="relative min-h-[85vh] md:min-h-[110vh] w-full flex flex-col items-center bg-black">
       {/* Fixed 3D Background */}
       <div className="fixed inset-0 w-full h-screen pointer-events-none">
         {mounted && <HeroCanvas />}
@@ -30,22 +30,22 @@ const Hero = () => {
       <Navbar />
 
       {/* HERO CONTENT SECTION */}
-      <div className="relative pt-[40vh] container mx-auto px-6 z-10 text-center h-screen flex flex-col items-center">
+      <div className="relative pt-[25vh] md:pt-[40vh] container mx-auto px-6 z-10 text-center pb-12 md:h-screen flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }} // Custom cubic-bezier for "expensive" feel
         >
-          <div className="mb-8 select-none">
+          <div className="mb-6 md:mb-8 select-none">
             <Text_03
               text="IntelliGrade"
-              className="text-6xl md:text-8xl font-light text-white tracking-tighter italic"
+              className="text-5xl md:text-8xl font-light text-white tracking-tighter italic"
               style={{ fontFamily: 'var(--font-playfair)', fontWeight: 300 }}
             />
             <Text_03
               text="ASEAS"
-              className="text-6xl md:text-8xl block not-italic select-none"
+              className="text-5xl md:text-8xl block not-italic select-none"
               charClassName="font-bold bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-500 bg-clip-text text-transparent transition-all duration-300 group-hover:drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]"
               style={{
                 fontFamily: 'var(--font-geometric)',
@@ -57,7 +57,7 @@ const Hero = () => {
 
           <TypingAnimation
             text="Revolutionizing academic integrity with AI-driven handwritten script evaluation."
-            className="text-gray-400 text-lg md:text-xl max-w-xl mx-auto mb-12 font-light leading-relaxed h-[3em]"
+            className="text-gray-400 text-base md:text-xl max-w-xl mx-auto mb-12 font-light leading-relaxed min-h-[4em] md:h-[3em]"
             duration={40}
           />
 

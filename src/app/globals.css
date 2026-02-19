@@ -30,6 +30,23 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Scrollbar utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #233648;
+  border-radius: 10px;
+}
+
 /* This fixes the white space at the bottom by ensuring the body 
    always fills at least the full screen height */
 main {

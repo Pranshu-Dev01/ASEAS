@@ -112,7 +112,7 @@ function AndroidDemo() {
                             animate={activeScreen === 0 ? "active" : "idle"}
                         >
                             <Android
-                                className="w-[320px] h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]"
+                                className="w-[280px] h-[560px] sm:w-[320px] sm:h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]"
                             >
                                 <StudentHomeDashboard
                                     isActive={activeScreen === 0}
@@ -135,7 +135,7 @@ function AndroidDemo() {
                             animate={activeScreen === 1 ? "active" : "idle"}
                         >
                             <Android
-                                className="w-[320px] h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]"
+                                className="w-[280px] h-[560px] sm:w-[320px] sm:h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]"
                             >
                                 <ClarificationChat
                                     isActive={activeScreen === 1}
@@ -157,7 +157,7 @@ function AndroidDemo() {
                             animate={activeScreen === 2 ? "active" : "idle"}
                         >
                             <Android
-                                className="w-[320px] h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]"
+                                className="w-[280px] h-[560px] sm:w-[320px] sm:h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]"
                             >
                                 <InsightsDashboard
                                     isActive={activeScreen === 2}
@@ -210,7 +210,7 @@ function AndroidDemo() {
                             initial="idle"
                             animate={activeTeacherScreen === 0 ? "active" : "idle"}
                         >
-                            <Android className="w-[320px] h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]">
+                            <Android className="w-[280px] h-[560px] sm:w-[320px] sm:h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]">
                                 <BatchScannerScreen
                                     isActive={activeTeacherScreen === 0}
                                     onComplete={() => handleTeacherAnimationComplete(0)}
@@ -230,7 +230,7 @@ function AndroidDemo() {
                             initial="idle"
                             animate={activeTeacherScreen === 1 ? "active" : "idle"}
                         >
-                            <Android className="w-[320px] h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]">
+                            <Android className="w-[280px] h-[560px] sm:w-[320px] sm:h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]">
                                 <EvaluationDetailScreen
                                     isActive={activeTeacherScreen === 1}
                                     onComplete={() => handleTeacherAnimationComplete(1)}
@@ -250,7 +250,7 @@ function AndroidDemo() {
                             initial="idle"
                             animate={activeTeacherScreen === 2 ? "active" : "idle"}
                         >
-                            <Android className="w-[320px] h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]">
+                            <Android className="w-[280px] h-[560px] sm:w-[320px] sm:h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]">
                                 <ProfessorDashboard
                                     isActive={activeTeacherScreen === 2}
                                     onComplete={() => handleTeacherAnimationComplete(2)}
