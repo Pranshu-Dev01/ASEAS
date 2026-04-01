@@ -85,10 +85,10 @@ function AndroidDemo() {
                         <TypingAnimation
                             text="Experience the Future"
                             start={isStudentInView}
-                            className="text-3xl md:text-6xl font-black text-white mb-6 uppercase tracking-tighter italic"
+                            className="text-2xl md:text-5xl font-black text-white mb-4 uppercase tracking-tighter italic"
                         />
                         <div className="inline-block relative">
-                            <p className="text-[#00f2ff] text-2xl md:text-3xl font-black tracking-[0.5em] uppercase mb-4 relative z-10">Student Portal</p>
+                            <p className="text-[#00f2ff] text-xl md:text-2xl font-black tracking-[0.4em] uppercase mb-3 relative z-10">Student Portal</p>
                             <motion.div
                                 initial={{ width: 0 }}
                                 animate={isStudentInView ? { width: "100%" } : {}}
@@ -112,7 +112,7 @@ function AndroidDemo() {
                             animate={activeScreen === 0 ? "active" : "idle"}
                         >
                             <Android
-                                className="w-[280px] h-[560px] sm:w-[320px] sm:h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]"
+                                className="w-[240px] h-[480px] sm:w-[260px] sm:h-[520px] md:w-[300px] md:h-[600px] lg:w-[320px] lg:h-[640px]"
                             >
                                 <StudentHomeDashboard
                                     isActive={activeScreen === 0}
@@ -135,7 +135,7 @@ function AndroidDemo() {
                             animate={activeScreen === 1 ? "active" : "idle"}
                         >
                             <Android
-                                className="w-[280px] h-[560px] sm:w-[320px] sm:h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]"
+                                className="w-[240px] h-[480px] sm:w-[260px] sm:h-[520px] md:w-[300px] md:h-[600px] lg:w-[320px] lg:h-[640px]"
                             >
                                 <ClarificationChat
                                     isActive={activeScreen === 1}
@@ -157,7 +157,7 @@ function AndroidDemo() {
                             animate={activeScreen === 2 ? "active" : "idle"}
                         >
                             <Android
-                                className="w-[280px] h-[560px] sm:w-[320px] sm:h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]"
+                                className="w-[240px] h-[480px] sm:w-[260px] sm:h-[520px] md:w-[300px] md:h-[600px] lg:w-[320px] lg:h-[640px]"
                             >
                                 <InsightsDashboard
                                     isActive={activeScreen === 2}
@@ -179,11 +179,11 @@ function AndroidDemo() {
                         <TypingAnimation
                             text="Educator Insights"
                             start={isTeacherInView}
-                            className="text-3xl md:text-6xl font-black text-white mb-6 uppercase tracking-tighter italic"
+                            className="text-2xl md:text-5xl font-black text-white mb-4 uppercase tracking-tighter italic"
                         />
-                        <div className="max-w-2xl mx-auto">
-                            <div className="inline-block relative mb-6">
-                                <p className="text-emerald-500 text-2xl md:text-3xl font-black tracking-[0.5em] uppercase relative z-10">Teachers Portal</p>
+                        <div className="max-w-xl mx-auto">
+                            <div className="inline-block relative mb-4">
+                                <p className="text-emerald-500 text-xl md:text-2xl font-black tracking-[0.4em] uppercase relative z-10">Teachers Portal</p>
                                 <motion.div
                                     initial={{ width: 0 }}
                                     animate={isTeacherInView ? { width: "100%" } : {}}
@@ -210,7 +210,7 @@ function AndroidDemo() {
                             initial="idle"
                             animate={activeTeacherScreen === 0 ? "active" : "idle"}
                         >
-                            <Android className="w-[280px] h-[560px] sm:w-[320px] sm:h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]">
+                            <Android className="w-[240px] h-[480px] sm:w-[260px] sm:h-[520px] md:w-[300px] md:h-[600px] lg:w-[320px] lg:h-[640px]">
                                 <BatchScannerScreen
                                     isActive={activeTeacherScreen === 0}
                                     onComplete={() => handleTeacherAnimationComplete(0)}
@@ -230,7 +230,7 @@ function AndroidDemo() {
                             initial="idle"
                             animate={activeTeacherScreen === 1 ? "active" : "idle"}
                         >
-                            <Android className="w-[280px] h-[560px] sm:w-[320px] sm:h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]">
+                            <Android className="w-[240px] h-[480px] sm:w-[260px] sm:h-[520px] md:w-[300px] md:h-[600px] lg:w-[320px] lg:h-[640px]">
                                 <EvaluationDetailScreen
                                     isActive={activeTeacherScreen === 1}
                                     onComplete={() => handleTeacherAnimationComplete(1)}
@@ -250,7 +250,7 @@ function AndroidDemo() {
                             initial="idle"
                             animate={activeTeacherScreen === 2 ? "active" : "idle"}
                         >
-                            <Android className="w-[280px] h-[560px] sm:w-[320px] sm:h-[640px] md:w-[380px] md:h-[760px] lg:w-[400px] lg:h-[800px]">
+                            <Android className="w-[240px] h-[480px] sm:w-[260px] sm:h-[520px] md:w-[300px] md:h-[600px] lg:w-[320px] lg:h-[640px]">
                                 <ProfessorDashboard
                                     isActive={activeTeacherScreen === 2}
                                     onComplete={() => handleTeacherAnimationComplete(2)}

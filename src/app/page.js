@@ -19,7 +19,7 @@ export default function Home() {
       <section id="vision" className="relative z-20 pt-4 pb-24 px-6 flex flex-col justify-center items-center overflow-hidden bg-black">
         <div className="mb-12">
           <TextShimmer
-            className="text-3xl md:text-6xl font-black uppercase tracking-tighter italic [--base-color:#cbd5e1] [--base-gradient-color:#ffffff]"
+            className="text-2xl md:text-5xl font-black uppercase tracking-tighter italic [--base-color:#cbd5e1] [--base-gradient-color:#ffffff]"
             duration={3}
           >
             Our Vision
@@ -43,7 +43,7 @@ export default function Home() {
       <div id="partners-section" className="flex flex-col items-center pt-10 pb-20 bg-black overflow-hidden">
         <div className="mb-2 text-center">
           <TextShimmer
-            className="text-3xl md:text-6xl font-black uppercase tracking-tighter italic [--base-color:#cbd5e1] [--base-gradient-color:#ffffff]"
+            className="text-2xl md:text-5xl font-black uppercase tracking-tighter italic [--base-color:#cbd5e1] [--base-gradient-color:#ffffff]"
             duration={3}
           >
             Our Stakeholders

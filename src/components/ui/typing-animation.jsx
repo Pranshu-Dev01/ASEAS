@@ -44,14 +44,16 @@ export function TypingAnimation({
     return (
         <div
             className={cn(
-                "font-display text-center text-4xl font-bold leading-tight tracking-[-0.02em]",
+                "relative font-display text-center text-4xl font-bold leading-tight tracking-[-0.02em]",
                 className,
             )}
         >
-            {displayedText}
-            {/* Optional: Add a flickering cursor for a more realistic feel */}
+            <span className="inline">
+              {displayedText}
+            </span>
+            {/* Flickering cursor - made absolute or less intrusive */}
             {start && currentIndex < text.length && (
-                <span className="inline-block w-1 h-8 md:h-12 bg-emerald-500 ml-1 animate-pulse" />
+                <span className="inline-block w-0.5 h-[1em] bg-emerald-500 ml-0.5 animate-pulse align-middle" />
             )}
         </div>
     );

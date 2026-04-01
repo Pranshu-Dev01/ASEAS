@@ -73,14 +73,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${scrolled ? 'py-4 bg-black/60 backdrop-blur-xl border-b border-white/10' : 'py-8 bg-transparent'
+    <nav className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${scrolled ? 'py-2 bg-black/60 backdrop-blur-xl border-b border-white/10' : 'py-4 bg-transparent'
       }`}>
-      <div className="container mx-auto px-6 max-w-[1400px] grid grid-cols-3 items-center">
+      <div className="container mx-auto px-6 max-w-7xl grid grid-cols-3 items-center">
 
         {/* Column 1: Logo */}
         <div className="flex justify-start items-center">
           <a href="/" onClick={(e) => { e.preventDefault(); handleNavClick('Vision', 'vision'); setMobileMenuOpen(false); }} className="flex items-center z-10 shrink-0">
-            <img src="/BlackRed-Flogo.png" alt="IntelliGrade Logo" className="h-12 md:h-16 lg:h-20 w-auto" />
+            <img src="/BlackRed-Flogo.png" alt="IntelliGrade Logo" className="h-8 md:h-10 lg:h-12 w-auto" />
           </a>
         </div>
 
@@ -111,13 +111,13 @@ const Navbar = () => {
             />
 
             {/* Links */}
-            <div className="flex items-center space-x-2 z-10 relative">
+            <div className="flex items-center space-x-1 z-10 relative">
               {navItems.map((item) => (
                 <button
                   key={item.label}
                   onClick={() => handleNavClick(item.label, item.id)}
                   className={cn(
-                    "px-4 py-2 text-[11px] md:text-sm uppercase tracking-[0.2em] font-semibold rounded-full transition-all duration-300 whitespace-nowrap",
+                    "px-3 py-1 text-[10px] md:text-xs uppercase tracking-[0.15em] font-semibold rounded-full transition-all duration-300 whitespace-nowrap",
                     active === item.label
                       ? "text-white bg-white/10 shadow-[0_0_20px_rgba(255,255,255,0.3)] backdrop-blur-sm"
                       : "text-gray-400 hover:text-white"
